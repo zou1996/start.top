@@ -15,8 +15,21 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+<<<<<<< HEAD
 from zhomepage.views import homepage
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('homepage/', homepage,name='homepage'),
+=======
+from django.conf.urls import url
+from zhomepage.views import homepage,blog,yyy,detail,msgboard,detail_comment
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('homepage/', homepage, name='homepage'),
+    path('homepage/blog/', blog, name='blog'),
+    path('homepage/yyy/', yyy, name='yyy'),
+    url(r'^homepage/blog/detail/(?P<page_num>\d+)$', detail, name='detail'),
+    url(r'^homepage/blog/detail/(?P<page_num>\d+)/comment$', detail_comment, name='comment'),
+    path('homepage/blog/msgboard', msgboard, name='msgboard'),
+>>>>>>> 2.2
 ]

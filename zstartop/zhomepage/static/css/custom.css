@@ -64,7 +64,11 @@
 
 .ui.inverted.basic.segment.people-say {
     height: 450px;
+<<<<<<< HEAD
     /* background: black; */
+=======
+    background: black;
+>>>>>>> 2.2
     /* background-size: cover;
     background-repeat: no-repeat; */
     /* position: relative; */
@@ -116,7 +120,11 @@
     top: 100%;
 }
 
+<<<<<<< HEAD
 .ui.inverted.basic.segment.people-say > .ui.inverted.red.circular.button.forzhh {
+=======
+.ui.inverted.red.circular.button.forzhh {
+>>>>>>> 2.2
     position: absolute;
     top: 100%;
     left: 50%;
